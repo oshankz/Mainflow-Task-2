@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+}
+
+.outerbox{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left ,#3ed8ff,#a8f5ff);
+}
+
+.innerbox{
+    width: 400px;
+    margin: auto;
+    position: relative;
+    top: 30%;
+    border-radius: 8px;
+    transform: translateY(-50);
+    padding:20px 40px;
+    z-index: 2;
+    background: linear-gradient(to top left, #ffffff,#ffffff33);
+    backdrop-filter: blur(8px);
+    box-shadow: 2px 2px 5px #226a9a;
+}
+
+.signupheader{
+    font-size: 1.5rem;
+    color: #212121;
+}
+
+.signupheader p {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.signupbody p{
+    margin: 10px 0px;
+}
+
+.signupbody p label {
+    font-weight: bold;
+}
+
+.signupbody p input{
+    width: 100%;
+    padding: 2px;
+    border: 2px solid #ccc;
+}
+
+.signupbody input[type="submit"]{
+    background-color: #3498db;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.signupbody input[type="submit"]:hover{
+    color:#226a9a ;
+}
+
+.signupfooter {
+    color: #555;
+    text-align: center;
+}
+
+.signupfooter p a{
+    color: #226a9a;
+    cursor: pointer;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top right, #ffffff33, #ffffffaa);
+    position: absolute;
+}
+
+.c1 {
+    top: 100px;
+    left: 20px;
+}
+
+.c2 {
+    bottom: 200px;
+    right: 50px;
+}
+
+@media screen and (max-width:479px) {
+    .outerbox{
+        overflow: hidden;
+    }
+    .circle{
+        width: 100px;
+        height: 100px;
+    }
+    .innerbox{
+        max-width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .signupheader{
+        font-size: initial;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .signupheader p {
+        font-size:initial;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
